@@ -1,0 +1,249 @@
+
+
+
+.wall {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: url('./Innovation Hub Background.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    overflow: hidden;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Optional: Add padding */
+    width: 100%; /* Ensure h1 takes full width */
+    position: Fixed;
+}
+
+.form-container {
+    width: 400px; /* Fixed width for the form */
+    max-width: 90%; /* Ensure it adapts to smaller screens */
+    height: auto; /* Auto height to fit content */
+    position: fixed; /* Keep it in place */
+    top: 18%; /* Adjust top position based on screen size */
+    left: 25%; /* Center the form horizontally */
+    transform: translateX(-50%); /* Center align using transform */
+    padding: 22px 24px; /* Padding around the form */
+
+    border-radius: 18px; /* Rounded corners */
+    border-width: 2px 0 0 0; /* Top border width */
+   
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 150%); /* Gradient background */
+    border-style: solid #ffff; /* Solid border */
+    border-image-source: linear-gradient(0deg, #EEEEEE 0%, rgba(238, 238, 238, 0) 100%);
+    border-image-slice: 1; /* Gradient applied to the border */
+   
+}
+
+
+input, textarea,select {
+    width: 100%; /* Ensure inputs and textareas take full width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    
+}
+
+textarea {
+    height: 100px; /* Set a fixed height for textarea */
+    resize: none; /* Prevent resizing of textarea */
+}
+
+.error-text {
+    color: #dc3545;
+    font-size: 0.875rem;
+    text-align: start;
+}
+
+.blur-background {
+    filter: blur(3px); /* Adjust the blur amount */
+    pointer-events: none; /* Disable interactions with blurred elements */
+    position: fixed; /* Position fixed to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000; /* Ensure it's below the loader but above other content */
+}
+
+/* Loader style */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1100; /* Ensure loader appears above the blur-background */
+}
+
+.loader .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #000;
+    border-radius: 80%;
+    animation: dotFlashing 1s infinite linear alternate;
+}
+
+@keyframes dotFlashing {
+    0% {
+        background-color: #000;
+    }
+    50%,
+    100% {
+        background-color: #ccc;
+    }
+}
+  .loader .dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .loader .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .loader .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+.popup {
+    position: fixed;
+    top: calc(16% + 5px); /* Positioned 16px below the h1 */
+    left: 51%;
+    transform: translateX(-50%); /* Center the popup horizontally */
+    display: flex;
+    align-items: center; /* Align text and icon vertically */
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it's above form-container but lower than other elements */
+    max-width: 90%; /* Ensure the popup adjusts to screen size */
+    font-size: 16px; /* Set appropriate font size */
+}
+
+.popup::before {
+    content: "\2714"; /* Add tick icon before the text */
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 20px; /* Adjust size of the tick icon */
+    color: #4caf50; /* Green color for the tick */
+}
+
+  
+.description-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+   
+  }
+  
+  .character-limit {
+    color: black;
+    font-weight: 500;
+    font-size: small;
+    /* Additional styles if needed */
+  }
+  
+
+.individual{
+    padding-bottom: 18px;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    border: 10px;
+    background-color:#000000;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+
+}
+
+button:hover {
+    background-color: #1d65b3;
+    transform: translateY(-2px); /* Simulates the button lifting up */
+    box-shadow: 0 6px #003f7f;
+}
+
+button:active {
+    transform: translateY(2px); /* Simulates the button being pressed down */
+    box-shadow: 0 2px #003f7f;
+}
+lable {
+    display: block;
+    margin-bottom: 4px; /* Add space between label and input */
+    font-weight: bold;
+    text-align: start;
+    
+    
+}
+.error-text {
+  color: red;
+  font-size: 12px;
+
+}
+
+.error-position {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -5px; /* Adjust this as per your design */
+  margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .wall {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .form-container {
+        width: 95%;
+        max-height: 400px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    
+    .form-container {
+        width: 100%;
+        max-height: 300px;
+    }
+
+}
+@media (max-width: 300px) {
+    .form-container {
+        width: 100%;
+    max-height: 300px;
+    }
+
+    input, textarea, select {
+        font-size: 14px; /* Reduce font size for smaller inputs */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button text */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+  

@@ -1,0 +1,254 @@
+html,
+body {
+   background: url('./View\ Ideas\ Background.png') no-repeat center center;  
+   font-family: 'Plus Jakarta Sans', sans-serif; 
+   font-weight: 350;
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+
+/* Logo container styles */
+.logo-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: calc(90% - 40px); /* Adjust width considering logo and button */
+  align-items: center;
+  z-index: 100; 
+}
+
+/* Logo image styling */
+.logo {
+  width: 160px; 
+  height: 35px;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2)); 
+}
+
+/* Heading styling */
+h1 {
+  margin: 40px 0 20px 0; 
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); 
+  text-align: center;
+}
+
+/* Table wrapper */
+.table-wrapper {
+  position: fixed;
+  top: 150px; /* Below the logo and heading */
+  left: 50%;
+  width: 90%;
+  max-height: 60vh; 
+  overflow-y: auto; 
+  transform: translateX(-50%);
+  
+  background: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px; 
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 50; 
+}
+
+/* Data table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px ;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+.data-table th {
+  background: linear-gradient(135deg, #3f51b5, #303f9f); 
+  color: #fff;
+  font-weight: bold;
+  position: sticky; 
+  top: 0; 
+  z-index: 2; 
+}
+
+/* Table cell styling */
+.data-table td {
+  background: #f5f5f5;
+}
+
+/* Hover effect */
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; 
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(5px);
+  z-index: 2000; 
+  overflow: auto; 
+ 
+}
+
+.modal.show {
+  display: flex; 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 80vw; 
+  max-height: 80vh; 
+  overflow: auto; 
+  text-align: left;
+  word-wrap: break-word;
+  box-sizing: border-box; 
+}
+
+/* Close button styling */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.read-more-link {
+  color: #007bff; /* Color of the link */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .table-wrapper {
+    width: 95%;
+    max-height: 400px;
+  }
+
+  .data-table th, 
+  .data-table td {
+    padding: 8px 15px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .modal-content {
+    padding: 15px;
+    max-width: 90vw;
+    max-height: 70vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .table-wrapper {
+    width: 100%;
+    max-height: 300px;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    white-space: normal;
+  }
+
+  .modal-content {
+    padding: 10px;
+    max-width: 95vw;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+}
+/* Add these styles to SubmittedData.css */
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust blur effect */
+  filter: blur(5px); /* Adjust blur amount */
+  z-index: 1000; /* Ensure it’s above other content */
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1100; /* Above blur background */
+}
+
+.loader .dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #000;
+  border-radius: 50%;
+  animation: dotFlashing 1s infinite linear alternate;
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #000;
+  }
+  50%,
+  100% {
+    background-color: #ccc;
+  }
+}
+
+.loader .dot:nth-child(1) {
+  animation-delay: 0s;
+}
+.loader .dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loader .dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
