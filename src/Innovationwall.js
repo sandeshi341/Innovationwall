@@ -45,7 +45,7 @@ const Innovationwall = () => {
       formData.append("file", selectedFile); // Add the file to the FormData
 
       // Send the file to the server using the /upload endpoint
-      fetch("http://localhost:3005/upload", {
+      fetch("http://localhost:3005/fileuploads", {
         method: "POST",
 
         body: formData,

@@ -10,12 +10,16 @@ const corsOptions = {
   origin: "http://localhost:3000", // Allow React app's origin
 };
 
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
+app.use(
+  "/fileuploads",
+  express.static(path.join(__dirname,  "fileuploads"))
+);
 
 // Set up multer for file storage
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "uploads/"); // Upload files to 'uploads' directory
+    cb(null, path.join(__dirname, "fileuploads")); // Upload files to 'fileuploads' directory
   },
   filename: (req, file, cb) => {
     cb(null, file.originalname); // Append date to file name to avoid conflicts
@@ -24,11 +28,12 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-// Define a route to handle file uploads
-app.post("/upload", upload.single("file"), (req, res) => {
-  const fileUrl = `http://localhost:3005/uploads/${req.file.filename}`;
+// Define a route to handle file fileuploads
+app.post("/fileuploads", upload.single("file"), (req, res) => {
+  const fileUrl = `http://localhost:3005/fileuploads/${req.file.filename}`;
+
   res.json({
-    file: req.file.originalname,
+    file: fileUrl,
   });
 });
 
