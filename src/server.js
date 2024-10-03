@@ -10,7 +10,7 @@ const corsOptions = {
   origin: "http://localhost:3000", // Allow React app's origin
 };
 
-//app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 app.use(
   "/fileuploads",
   express.static(path.join(__dirname,  "fileuploads"))

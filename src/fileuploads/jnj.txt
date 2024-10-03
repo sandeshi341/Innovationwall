@@ -1,0 +1,639 @@
+2024-08-23 08:44:47.995 [pool-400-thread-2] INFO  com.rightdata.rdbms.IngestQuery:3277 - ConnectionJDBCURL - jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false;CharacterSet=UTF-8
+2024-08-23 08:44:48.182 [pool-400-thread-2] INFO  com.rightdata.rdbms.IngestQuery:1679 - Remote query: select * from QC_1865_CUR order by di,data_scope desc
+2024-08-23 08:44:49.167 [pool-400-thread-1] INFO  com.rightdata.rdbms.IngestQuery:3378 - Columns: ROW_NUM INT IDENTITY(1,1), [di] NVARCHAR(MAX), [di_issuing_agency] NVARCHAR(MAX), [di_level] NVARCHAR(MAX), [data_scope] NVARCHAR(MAX), [active_approved] NVARCHAR(MAX), [device_additional_info_url] NVARCHAR(MAX), [eu_annex_xvi_non_medical_impact_adipose_tissue_flag] NVARCHAR(MAX), [eu_annex_xvi_non_medical_brain_electrosimulation_flag] NVARCHAR(MAX), [budi] NVARCHAR(MAX), [budi_issuing_agency] NVARCHAR(MAX), [combination_product] NVARCHAR(MAX), [nmpa_classification_code] NVARCHAR(MAX), [commercial_distribution_end_date] NVARCHAR(MAX), [consumable_or_equipment] NVARCHAR(MAX), [eu_annex_xvi_non_medical_contact_lenses_flag] NVARCHAR(MAX), [contains_natural_rubber_flag] NVARCHAR(MAX), [contains_phthalates] NVARCHAR(MAX), [expiration_date_flag] NVARCHAR(MAX), [lot_batch_num_flag] NVARCHAR(MAX), [manufacturing_date_flag] NVARCHAR(MAX), [serial_num_flag] NVARCHAR(MAX), [software_version_flag] NVARCHAR(MAX), [udi_opco] NVARCHAR(MAX), [device_count] NVARCHAR(MAX), [device_ivd_reagents] NVARCHAR(MAX), [registrant_or_filer_name] NVARCHAR(MAX), [registrant_or_filer_name_english] NVARCHAR(MAX), [device_status] NVARCHAR(MAX), [di_record_publish_date] NVARCHAR(MAX), [issuing_agency_direct_marking_di] NVARCHAR(MAX), [direct_marking_di] NVARCHAR(MAX), [benefit_reimbursement_eligible] NVARCHAR(MAX), [eu_annex_xvi_non_medical_high_emr_flag] NVARCHAR(MAX), [eu_annex_xvi_non_medical_dermal_injection_filling_flag] NVARCHAR(MAX), [has_dm_di_flag] NVARCHAR(MAX), [dm_di_same_as_primary_di] NVARCHAR(MAX), [primary_di_same_as_registered_or_filed_di] NVARCHAR(MAX), [kit] NVARCHAR(MAX), [device_max_reuses] NVARCHAR(MAX), [eu_member_state_where_device_is_placed] NVARCHAR(MAX), [mri_safety_status] NVARCHAR(MAX), [requires_sterilization_prior_to_use_flag] NVARCHAR(MAX), [product_designer_srn] NVARCHAR(MAX), [nmpa_original_classification_code] NVARCHAR(MAX), [device_packaged_sterile_flag] NVARCHAR(MAX), [product_generic_name] NVARCHAR(MAX), [eu_annex_xvi_non_medical_introduced_into_human_body_flag] NVARCHAR(MAX), [internal_device_tracking_number] NVARCHAR(MAX), [internal_device_batch_number] NVARCHAR(MAX), [product_sku] NVARCHAR(MAX), [device_discontinuation_reason] NVARCHAR(MAX), [benefit_reimbursement_no_code_reason] NVARCHAR(MAX), [catalog_reference] NVARCHAR(MAX), [registered_or_filed_di] NVARCHAR(MAX), [reprocessed_single_use_device_flag] NVARCHAR(MAX), [for_single_use_flag] NVARCHAR(MAX), [samd_version] NVARCHAR(MAX), [issuing_agency_unit_of_use_di] NVARCHAR(MAX), [unit_of_use_di] NVARCHAR(MAX), [version_or_model] NVARCHAR(MAX), [haveLimitedNoReuses] NVARCHAR(MAX), [revisioncreatedby] NVARCHAR(MAX), [revision] NVARCHAR(MAX), [change_description] NVARCHAR(MAX), [unified_social_credit_code] NVARCHAR(MAX), [not_made_with_natural_rubber_flag] NVARCHAR(MAX), [human_cell_tissue_flag] NVARCHAR(MAX), [subject_to_dm_but_excepted] NVARCHAR(MAX), [labeler_duns_number] NVARCHAR(MAX), [exempt_premarket_submission] NVARCHAR(MAX), [donation_identification_number] NVARCHAR(MAX), [prescription_use_rx] NVARCHAR(MAX), [over_the_counter_otc] NVARCHAR(MAX), [loaner_set_orthopedic_set] NVARCHAR(MAX), [user_sterilization_required_for_orthopedic_products] NVARCHAR(MAX), [CompanyProductCrossReferenceDI] NVARCHAR(MAX), [new_device] NVARCHAR(MAX), [channel_revision] NVARCHAR(MAX), [channel_revision_date_time_utc] NVARCHAR(MAX), [attribute_status] NVARCHAR(MAX), [validation_status] NVARCHAR(MAX), [health_authority_derived_state] NVARCHAR(MAX), [submission_data_serviceId] NVARCHAR(MAX), [submission_data_serviceOperation] NVARCHAR(MAX), [submission_data_submissionStatusDate] NVARCHAR(MAX), [submission_data_submissionType] NVARCHAR(MAX), [submission_data_creationDateTime] NVARCHAR(MAX), [submission_data_deviceRecordKey] NVARCHAR(MAX), [submission_data_messageId] NVARCHAR(MAX), [submission_data_correlationId] NVARCHAR(MAX), [submission_data_submissionStatusCodeDescription] NVARCHAR(MAX), [previous_di] NVARCHAR(MAX), [issuing_agency_previous_di] NVARCHAR(MAX), [applicationsubmissionchannels] NVARCHAR(MAX)
+2024-08-23 08:44:49.339 [pool-400-thread-2] INFO  com.rightdata.rdbms.IngestQuery:3378 - Columns: ROW_NUM INT IDENTITY(1,1), [di] NVARCHAR(MAX), [di_issuing_agency] NVARCHAR(MAX), [di_level] NVARCHAR(MAX), [data_scope] NVARCHAR(MAX), [active_approved] NVARCHAR(MAX), [device_additional_info_url] NVARCHAR(MAX), [eu_annex_xvi_non_medical_impact_adipose_tissue_flag] NVARCHAR(MAX), [eu_annex_xvi_non_medical_brain_electrosimulation_flag] NVARCHAR(MAX), [budi] NVARCHAR(MAX), [budi_issuing_agency] NVARCHAR(MAX), [combination_product] NVARCHAR(MAX), [nmpa_classification_code] NVARCHAR(MAX), [commercial_distribution_end_date] NVARCHAR(MAX), [consumable_or_equipment] NVARCHAR(MAX), [eu_annex_xvi_non_medical_contact_lenses_flag] NVARCHAR(MAX), [contains_natural_rubber_flag] NVARCHAR(MAX), [contains_phthalates] NVARCHAR(MAX), [expiration_date_flag] NVARCHAR(MAX), [lot_batch_num_flag] NVARCHAR(MAX), [manufacturing_date_flag] NVARCHAR(MAX), [serial_num_flag] NVARCHAR(MAX), [software_version_flag] NVARCHAR(MAX), [udi_opco] NVARCHAR(MAX), [device_count] NVARCHAR(MAX), [device_ivd_reagents] NVARCHAR(MAX), [registrant_or_filer_name] NVARCHAR(MAX), [registrant_or_filer_name_english] NVARCHAR(MAX), [device_status] NVARCHAR(MAX), [di_record_publish_date] NVARCHAR(MAX), [issuing_agency_direct_marking_di] NVARCHAR(MAX), [direct_marking_di] NVARCHAR(MAX), [benefit_reimbursement_eligible] NVARCHAR(MAX), [eu_annex_xvi_non_medical_high_emr_flag] NVARCHAR(MAX), [eu_annex_xvi_non_medical_dermal_injection_filling_flag] NVARCHAR(MAX), [has_dm_di_flag] NVARCHAR(MAX), [dm_di_same_as_primary_di] NVARCHAR(MAX), [primary_di_same_as_registered_or_filed_di] NVARCHAR(MAX), [kit] NVARCHAR(MAX), [device_max_reuses] NVARCHAR(MAX), [eu_member_state_where_device_is_placed] NVARCHAR(MAX), [mri_safety_status] NVARCHAR(MAX), [requires_sterilization_prior_to_use_flag] NVARCHAR(MAX), [product_designer_srn] NVARCHAR(MAX), [nmpa_original_classification_code] NVARCHAR(MAX), [device_packaged_sterile_flag] NVARCHAR(MAX), [product_generic_name] NVARCHAR(MAX), [eu_annex_xvi_non_medical_introduced_into_human_body_flag] NVARCHAR(MAX), [internal_device_tracking_number] NVARCHAR(MAX), [internal_device_batch_number] NVARCHAR(MAX), [product_sku] NVARCHAR(MAX), [device_discontinuation_reason] NVARCHAR(MAX), [benefit_reimbursement_no_code_reason] NVARCHAR(MAX), [catalog_reference] NVARCHAR(MAX), [registered_or_filed_di] NVARCHAR(MAX), [reprocessed_single_use_device_flag] NVARCHAR(MAX), [for_single_use_flag] NVARCHAR(MAX), [samd_version] NVARCHAR(MAX), [issuing_agency_unit_of_use_di] NVARCHAR(MAX), [unit_of_use_di] NVARCHAR(MAX), [version_or_model] NVARCHAR(MAX), [haveLimitedNoReuses] NVARCHAR(MAX), [revisioncreatedby] NVARCHAR(MAX), [revisioncreateddatetimeutc] NVARCHAR(MAX), [revision] NVARCHAR(MAX), [change_description] NVARCHAR(MAX), [unified_social_credit_code] NVARCHAR(MAX), [not_made_with_natural_rubber_flag] NVARCHAR(MAX), [human_cell_tissue_flag] NVARCHAR(MAX), [subject_to_dm_but_excepted] NVARCHAR(MAX), [labeler_duns_number] NVARCHAR(MAX), [exempt_premarket_submission] NVARCHAR(MAX), [donation_identification_number] NVARCHAR(MAX), [prescription_use_rx] NVARCHAR(MAX), [over_the_counter_otc] NVARCHAR(MAX), [loaner_set_orthopedic_set] NVARCHAR(MAX), [user_sterilization_required_for_orthopedic_products] NVARCHAR(MAX), [company_product_cross_reference_di] NVARCHAR(MAX), [channel_revision] NVARCHAR(MAX), [channel_revision_date_time_utc] NVARCHAR(MAX), [attribute_status] NVARCHAR(MAX), [validation_status] NVARCHAR(MAX), [health_authority_derived_state] NVARCHAR(MAX), [new_device] NVARCHAR(MAX), [submission_data_serviceId] NVARCHAR(MAX), [submission_data_serviceOperation] NVARCHAR(MAX), [submission_data_submissionStatusDate] NVARCHAR(MAX), [submission_data_submissionType] NVARCHAR(MAX), [submission_data_creationDateTime] NVARCHAR(MAX), [submission_data_deviceRecordKey] NVARCHAR(MAX), [submission_data_messageId] NVARCHAR(MAX), [submission_data_correlationId] NVARCHAR(MAX), [submission_data_submissionStatusCodeDescription] NVARCHAR(MAX), [previous_di] NVARCHAR(MAX), [issuing_agency_previous_di] NVARCHAR(MAX), [applicable_submission_channel] NVARCHAR(MAX)
+2024-08-23 08:45:05.337 [http-nio-9090-exec-5] WARN  c.r.web.security.JwtRequestFilter:38 - JWT Token does not begin with Bearer String
+2024-08-23 08:45:05.337 [http-nio-9090-exec-5] INFO  c.r.web.End2EndRestController:1600 - Raw JSON: {"scenarioName":"S_5882","metaName":"Return_Device_identifier - Us-Active","session":"10","comparisonResultsTable":"rightdata_db.S_5882_10","source":[{"type":"RDBMS","data":[{"connectionJDBCURL":"jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false","userName":"admin_azryaod","password":"xxxxxx","sourceTableOrQuery":"SELECT *\nFROM QC_1870_CUR\n","parallelism":1,"packetSize":0.0,"splitBy":null,"targetDatabaseTable":null,"selectedFields":"di,di_issuing_agency,di_level,data_scope,active_approved,device_additional_info_url,eu_annex_xvi_non_medical_impact_adipose_tissue_flag,eu_annex_xvi_non_medical_brain_electrosimulation_flag,budi,budi_issuing_agency,combination_product,nmpa_classification_code,commercial_distribution_end_date,consumable_or_equipment,eu_annex_xvi_non_medical_contact_lenses_flag,contains_natural_rubber_flag,contains_phthalates,expiration_date_flag,lot_batch_num_flag,manufacturing_date_flag,serial_num_flag,software_version_flag,udi_opco,device_count,device_ivd_reagents,registrant_or_filer_name,registrant_or_filer_name_english,device_status,di_record_publish_date,issuing_agency_direct_marking_di,direct_marking_di,benefit_reimbursement_eligible,eu_annex_xvi_non_medical_high_emr_flag,eu_annex_xvi_non_medical_dermal_injection_filling_flag,has_dm_di_flag,dm_di_same_as_primary_di,primary_di_same_as_registered_or_filed_di,kit,device_max_reuses,eu_member_state_where_device_is_placed,mri_safety_status,requires_sterilization_prior_to_use_flag,product_designer_srn,nmpa_original_classification_code,device_packaged_sterile_flag,product_generic_name,eu_annex_xvi_non_medical_introduced_into_human_body_flag,internal_device_tracking_number,internal_device_batch_number,product_sku,device_discontinuation_reason,benefit_reimbursement_no_code_reason,catalog_reference,registered_or_filed_di,reprocessed_single_use_device_flag,for_single_use_flag,samd_version,issuing_agency_unit_of_use_di,unit_of_use_di,version_or_model,haveLimitedNoReuses,revisioncreatedby,revisioncreateddatetimeutc,revision,change_description,unified_social_credit_code,not_made_with_natural_rubber_flag,human_cell_tissue_flag,subject_to_dm_but_excepted,labeler_duns_number,exempt_premarket_submission,donation_identification_number,prescription_use_rx,over_the_counter_otc,loaner_set_orthopedic_set,user_sterilization_required_for_orthopedic_products,submission_data_serviceId,submission_data_serviceOperation,submission_data_submissionStatusDate,submission_data_submissionType,submission_data_creationDateTime,submission_data_deviceRecordKey,submission_data_messageId,submission_data_correlationId,submission_data_submissionStatusCodeDescription,previous_di,issuing_agency_previous_di,applicationsubmissionchannels,channel_revision,channel_revision_date_time_utc,attribute_status,validation_status,health_authority_derived_state","driverClass":"","rdbmsSelectedFields":{"di":"varchar","di_issuing_agency":"varchar","di_level":"varchar","data_scope":"varchar","active_approved":"varchar","device_additional_info_url":"varchar","eu_annex_xvi_non_medical_impact_adipose_tissue_flag":"varchar","eu_annex_xvi_non_medical_brain_electrosimulation_flag":"varchar","budi":"varchar","budi_issuing_agency":"varchar","combination_product":"varchar","nmpa_classification_code":"varchar","commercial_distribution_end_date":"varchar","consumable_or_equipment":"varchar","eu_annex_xvi_non_medical_contact_lenses_flag":"varchar","contains_natural_rubber_flag":"varchar","contains_phthalates":"varchar","expiration_date_flag":"varchar","lot_batch_num_flag":"varchar","manufacturing_date_flag":"varchar","serial_num_flag":"varchar","software_version_flag":"varchar","udi_opco":"varchar","device_count":"varchar","device_ivd_reagents":"varchar","registrant_or_filer_name":"varchar","registrant_or_filer_name_english":"varchar","device_status":"varchar","di_record_publish_date":"varchar","issuing_agency_direct_marking_di":"varchar","direct_marking_di":"varchar","benefit_reimbursement_eligible":"varchar","eu_annex_xvi_non_medical_high_emr_flag":"varchar","eu_annex_xvi_non_medical_dermal_injection_filling_flag":"varchar","has_dm_di_flag":"varchar","dm_di_same_as_primary_di":"varchar","primary_di_same_as_registered_or_filed_di":"varchar","kit":"varchar","device_max_reuses":"varchar","eu_member_state_where_device_is_placed":"varchar","mri_safety_status":"varchar","requires_sterilization_prior_to_use_flag":"varchar","product_designer_srn":"varchar","nmpa_original_classification_code":"varchar","device_packaged_sterile_flag":"varchar","product_generic_name":"varchar","eu_annex_xvi_non_medical_introduced_into_human_body_flag":"varchar","internal_device_tracking_number":"varchar","internal_device_batch_number":"varchar","product_sku":"varchar","device_discontinuation_reason":"varchar","benefit_reimbursement_no_code_reason":"varchar","catalog_reference":"varchar","registered_or_filed_di":"varchar","reprocessed_single_use_device_flag":"varchar","for_single_use_flag":"varchar","samd_version":"varchar","issuing_agency_unit_of_use_di":"varchar","unit_of_use_di":"varchar","version_or_model":"varchar","haveLimitedNoReuses":"varchar","revisioncreatedby":"varchar","revisioncreateddatetimeutc":"varchar","revision":"varchar","change_description":"varchar","unified_social_credit_code":"varchar","not_made_with_natural_rubber_flag":"varchar","human_cell_tissue_flag":"varchar","subject_to_dm_but_excepted":"varchar","labeler_duns_number":"varchar","exempt_premarket_submission":"varchar","donation_identification_number":"varchar","prescription_use_rx":"varchar","over_the_counter_otc":"varchar","loaner_set_orthopedic_set":"varchar","user_sterilization_required_for_orthopedic_products":"varchar","submission_data_serviceId":"varchar","submission_data_serviceOperation":"varchar","submission_data_submissionStatusDate":"varchar","submission_data_submissionType":"varchar","submission_data_creationDateTime":"varchar","submission_data_deviceRecordKey":"varchar","submission_data_messageId":"varchar","submission_data_correlationId":"varchar","submission_data_submissionStatusCodeDescription":"varchar","previous_di":"varchar","issuing_agency_previous_di":"varchar","applicationsubmissionchannels":"varchar","channel_revision":"nvarchar","channel_revision_date_time_utc":"nvarchar","attribute_status":"nvarchar","validation_status":"nvarchar","health_authority_derived_state":"nvarchar"},"distinct":false,"queryChain":false,"offsetValue":null,"offsetDate":null,"orderBy":"","ssh":false,"sshHost":"","sshUsername":"","sshPemFile":"","privateKey":false,"privateKeyPath":"","passphrase":"","awsCredentials":null,"amazonAthena":null,"tableDetails":null,"bdiTablesDetails":null}],"profileId":106,"stepId":1,"QC_Query_ProfileId":null}],"target":[{"type":"RDBMS","data":[{"connectionJDBCURL":"jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false","userName":"admin_azryaod","password":"xxxxxx","sourceTableOrQuery":"SELECT *\nFROM QC_1871_CUR\n","parallelism":1,"packetSize":0.0,"splitBy":null,"targetDatabaseTable":null,"selectedFields":"di,di_issuing_agency,di_level,data_scope,active_approved,device_additional_info_url,eu_annex_xvi_non_medical_impact_adipose_tissue_flag,eu_annex_xvi_non_medical_brain_electrosimulation_flag,budi,budi_issuing_agency,combination_product,nmpa_classification_code,commercial_distribution_end_date,consumable_or_equipment,eu_annex_xvi_non_medical_contact_lenses_flag,contains_natural_rubber_flag,contains_phthalates,expiration_date_flag,lot_batch_num_flag,manufacturing_date_flag,serial_num_flag,software_version_flag,udi_opco,device_count,device_ivd_reagents,registrant_or_filer_name,registrant_or_filer_name_english,device_status,di_record_publish_date,issuing_agency_direct_marking_di,direct_marking_di,benefit_reimbursement_eligible,eu_annex_xvi_non_medical_high_emr_flag,eu_annex_xvi_non_medical_dermal_injection_filling_flag,has_dm_di_flag,dm_di_same_as_primary_di,primary_di_same_as_registered_or_filed_di,kit,device_max_reuses,eu_member_state_where_device_is_placed,mri_safety_status,requires_sterilization_prior_to_use_flag,product_designer_srn,nmpa_original_classification_code,device_packaged_sterile_flag,product_generic_name,eu_annex_xvi_non_medical_introduced_into_human_body_flag,internal_device_tracking_number,internal_device_batch_number,product_sku,device_discontinuation_reason,benefit_reimbursement_no_code_reason,catalog_reference,registered_or_filed_di,reprocessed_single_use_device_flag,for_single_use_flag,samd_version,issuing_agency_unit_of_use_di,unit_of_use_di,version_or_model,haveLimitedNoReuses,revisioncreatedby,revision,change_description,unified_social_credit_code,not_made_with_natural_rubber_flag,human_cell_tissue_flag,subject_to_dm_but_excepted,labeler_duns_number,exempt_premarket_submission,donation_identification_number,prescription_use_rx,over_the_counter_otc,loaner_set_orthopedic_set,user_sterilization_required_for_orthopedic_products,submission_data_serviceId,submission_data_serviceOperation,submission_data_submissionStatusDate,submission_data_submissionType,submission_data_creationDateTime,submission_data_deviceRecordKey,submission_data_messageId,submission_data_correlationId,submission_data_submissionStatusCodeDescription,previous_di,issuing_agency_previous_di,applicable_submission_channel,attribute_status,validation_status,health_authority_state,channel_revision,channel_revision_date_time_utc","driverClass":"","rdbmsSelectedFields":{"di":"varchar","di_issuing_agency":"varchar","di_level":"varchar","data_scope":"varchar","active_approved":"varchar","device_additional_info_url":"varchar","eu_annex_xvi_non_medical_impact_adipose_tissue_flag":"varchar","eu_annex_xvi_non_medical_brain_electrosimulation_flag":"varchar","budi":"varchar","budi_issuing_agency":"varchar","combination_product":"varchar","nmpa_classification_code":"varchar","commercial_distribution_end_date":"varchar","consumable_or_equipment":"varchar","eu_annex_xvi_non_medical_contact_lenses_flag":"varchar","contains_natural_rubber_flag":"varchar","contains_phthalates":"varchar","expiration_date_flag":"varchar","lot_batch_num_flag":"varchar","manufacturing_date_flag":"varchar","serial_num_flag":"varchar","software_version_flag":"varchar","udi_opco":"varchar","device_count":"varchar","device_ivd_reagents":"varchar","registrant_or_filer_name":"varchar","registrant_or_filer_name_english":"varchar","device_status":"varchar","di_record_publish_date":"varchar","issuing_agency_direct_marking_di":"varchar","direct_marking_di":"varchar","benefit_reimbursement_eligible":"varchar","eu_annex_xvi_non_medical_high_emr_flag":"varchar","eu_annex_xvi_non_medical_dermal_injection_filling_flag":"varchar","has_dm_di_flag":"varchar","dm_di_same_as_primary_di":"varchar","primary_di_same_as_registered_or_filed_di":"varchar","kit":"varchar","device_max_reuses":"varchar","eu_member_state_where_device_is_placed":"varchar","mri_safety_status":"varchar","requires_sterilization_prior_to_use_flag":"varchar","product_designer_srn":"varchar","nmpa_original_classification_code":"varchar","device_packaged_sterile_flag":"varchar","product_generic_name":"varchar","eu_annex_xvi_non_medical_introduced_into_human_body_flag":"varchar","internal_device_tracking_number":"varchar","internal_device_batch_number":"varchar","product_sku":"varchar","device_discontinuation_reason":"varchar","benefit_reimbursement_no_code_reason":"varchar","catalog_reference":"varchar","registered_or_filed_di":"varchar","reprocessed_single_use_device_flag":"varchar","for_single_use_flag":"varchar","samd_version":"varchar","issuing_agency_unit_of_use_di":"varchar","unit_of_use_di":"varchar","version_or_model":"varchar","haveLimitedNoReuses":"varchar","revisioncreatedby":"varchar","revision":"varchar","change_description":"varchar","unified_social_credit_code":"varchar","not_made_with_natural_rubber_flag":"varchar","human_cell_tissue_flag":"varchar","subject_to_dm_but_excepted":"varchar","labeler_duns_number":"varchar","exempt_premarket_submission":"varchar","donation_identification_number":"varchar","prescription_use_rx":"varchar","over_the_counter_otc":"varchar","loaner_set_orthopedic_set":"varchar","user_sterilization_required_for_orthopedic_products":"varchar","submission_data_serviceId":"varchar","submission_data_serviceOperation":"varchar","submission_data_submissionStatusDate":"varchar","submission_data_submissionType":"varchar","submission_data_creationDateTime":"varchar","submission_data_deviceRecordKey":"varchar","submission_data_messageId":"varchar","submission_data_correlationId":"varchar","submission_data_submissionStatusCodeDescription":"varchar","previous_di":"varchar","issuing_agency_previous_di":"varchar","applicable_submission_channel":"varchar","attribute_status":"nvarchar","validation_status":"nvarchar","health_authority_state":"nvarchar","channel_revision":"nvarchar","channel_revision_date_time_utc":"nvarchar"},"distinct":false,"queryChain":false,"offsetValue":null,"offsetDate":null,"orderBy":"","ssh":false,"sshHost":"","sshUsername":"","sshPemFile":"","privateKey":false,"privateKeyPath":"","passphrase":"","awsCredentials":null,"amazonAthena":null,"tableDetails":null,"bdiTablesDetails":null}],"profileId":106,"stepId":2,"QC_Query_ProfileId":null}],"exceptionRecordsLimit":0,"enableExternalLink":false,"sourceSnapshot":false,"targetSnapshot":false,"userid":"RDAdmin","mapping":[{"source":"di","target":"di","dimension":true,"metric":false,"key":true,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"di_issuing_agency","target":"di_issuing_agency","dimension":true,"metric":false,"key":true,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"di_level","target":"di_level","dimension":true,"metric":false,"key":true,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"data_scope","target":"data_scope","dimension":true,"metric":false,"key":true,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"active_approved","target":"active_approved","dimension":true,"metric":false,"key":true,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"device_additional_info_url","target":"device_additional_info_url","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"eu_annex_xvi_non_medical_impact_adipose_tissue_flag","target":"eu_annex_xvi_non_medical_impact_adipose_tissue_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"eu_annex_xvi_non_medical_brain_electrosimulation_flag","target":"eu_annex_xvi_non_medical_brain_electrosimulation_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"budi","target":"budi","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"budi_issuing_agency","target":"budi_issuing_agency","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"combination_product","target":"combination_product","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"nmpa_classification_code","target":"nmpa_classification_code","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"commercial_distribution_end_date","target":"commercial_distribution_end_date","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"consumable_or_equipment","target":"consumable_or_equipment","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"eu_annex_xvi_non_medical_contact_lenses_flag","target":"eu_annex_xvi_non_medical_contact_lenses_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"contains_natural_rubber_flag","target":"contains_natural_rubber_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"contains_phthalates","target":"contains_phthalates","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"expiration_date_flag","target":"expiration_date_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"lot_batch_num_flag","target":"lot_batch_num_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"manufacturing_date_flag","target":"manufacturing_date_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"serial_num_flag","target":"serial_num_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"software_version_flag","target":"software_version_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"udi_opco","target":"udi_opco","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"device_count","target":"device_count","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"device_ivd_reagents","target":"device_ivd_reagents","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"registrant_or_filer_name","target":"registrant_or_filer_name","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"registrant_or_filer_name_english","target":"registrant_or_filer_name_english","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"device_status","target":"device_status","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"di_record_publish_date","target":"di_record_publish_date","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"issuing_agency_direct_marking_di","target":"issuing_agency_direct_marking_di","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"direct_marking_di","target":"direct_marking_di","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"benefit_reimbursement_eligible","target":"benefit_reimbursement_eligible","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"eu_annex_xvi_non_medical_high_emr_flag","target":"eu_annex_xvi_non_medical_high_emr_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"eu_annex_xvi_non_medical_dermal_injection_filling_flag","target":"eu_annex_xvi_non_medical_dermal_injection_filling_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"has_dm_di_flag","target":"has_dm_di_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"dm_di_same_as_primary_di","target":"dm_di_same_as_primary_di","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"primary_di_same_as_registered_or_filed_di","target":"primary_di_same_as_registered_or_filed_di","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"kit","target":"kit","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"device_max_reuses","target":"device_max_reuses","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"eu_member_state_where_device_is_placed","target":"eu_member_state_where_device_is_placed","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"mri_safety_status","target":"mri_safety_status","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"requires_sterilization_prior_to_use_flag","target":"requires_sterilization_prior_to_use_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"product_designer_srn","target":"product_designer_srn","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"nmpa_original_classification_code","target":"nmpa_original_classification_code","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"device_packaged_sterile_flag","target":"device_packaged_sterile_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"product_generic_name","target":"product_generic_name","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"eu_annex_xvi_non_medical_introduced_into_human_body_flag","target":"eu_annex_xvi_non_medical_introduced_into_human_body_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"internal_device_tracking_number","target":"internal_device_tracking_number","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"internal_device_batch_number","target":"internal_device_batch_number","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"product_sku","target":"product_sku","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"device_discontinuation_reason","target":"device_discontinuation_reason","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"benefit_reimbursement_no_code_reason","target":"benefit_reimbursement_no_code_reason","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"catalog_reference","target":"catalog_reference","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"registered_or_filed_di","target":"registered_or_filed_di","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"reprocessed_single_use_device_flag","target":"reprocessed_single_use_device_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"for_single_use_flag","target":"for_single_use_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"samd_version","target":"samd_version","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"issuing_agency_unit_of_use_di","target":"issuing_agency_unit_of_use_di","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"unit_of_use_di","target":"unit_of_use_di","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"version_or_model","target":"version_or_model","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"haveLimitedNoReuses","target":"haveLimitedNoReuses","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"revisioncreatedby","target":"revisioncreatedby","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"revision","target":"revision","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"change_description","target":"change_description","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"unified_social_credit_code","target":"unified_social_credit_code","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"not_made_with_natural_rubber_flag","target":"not_made_with_natural_rubber_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"human_cell_tissue_flag","target":"human_cell_tissue_flag","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"subject_to_dm_but_excepted","target":"subject_to_dm_but_excepted","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"labeler_duns_number","target":"labeler_duns_number","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"exempt_premarket_submission","target":"exempt_premarket_submission","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"donation_identification_number","target":"donation_identification_number","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"prescription_use_rx","target":"prescription_use_rx","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"over_the_counter_otc","target":"over_the_counter_otc","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"loaner_set_orthopedic_set","target":"loaner_set_orthopedic_set","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"user_sterilization_required_for_orthopedic_products","target":"user_sterilization_required_for_orthopedic_products","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"submission_data_serviceId","target":"submission_data_serviceId","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"submission_data_serviceOperation","target":"submission_data_serviceOperation","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"submission_data_submissionStatusDate","target":"submission_data_submissionStatusDate","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"submission_data_submissionType","target":"submission_data_submissionType","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"submission_data_creationDateTime","target":"submission_data_creationDateTime","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"submission_data_deviceRecordKey","target":"submission_data_deviceRecordKey","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"submission_data_messageId","target":"submission_data_messageId","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"submission_data_correlationId","target":"submission_data_correlationId","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"submission_data_submissionStatusCodeDescription","target":"submission_data_submissionStatusCodeDescription","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"previous_di","target":"previous_di","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"issuing_agency_previous_di","target":"issuing_agency_previous_di","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"applicationsubmissionchannels","target":"applicable_submission_channel","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"channel_revision","target":"channel_revision","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"channel_revision_date_time_utc","target":"channel_revision_date_time_utc","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"attribute_status","target":"attribute_status","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"validation_status","target":"validation_status","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null},{"source":"health_authority_derived_state","target":"health_authority_state","dimension":true,"metric":false,"key":false,"thresholdValue":0.0,"thresholdPercentage":0.0,"round":null}],"adhoc":false,"comparisonBasedOn":"both","sourceAdditionalOptions":false,"targetAdditionalOptions":false,"sourceTransformation":[],"targetTransformation":[],"sourceBlendConnections":null,"targetBlendConnections":null,"sourceJoins":null,"targetJoins":null,"sourceBlendFinalColumns":null,"targetBlendFinalColumns":null,"tableauExtractor":false,"appendTableauExtractorIfExists":false,"reconStepId":3,"jobId":0,"jobSession":0,"triggerVersionOne":false,"triggerJira":false,"triggerXray":false,"versionOne":null,"jiraList":null,"serviceNowList":null,"xrayList":null,"compositeScenario":null,"ignoreKeyDuplicates":true,"showFullData":true,"reportingCharacteristics":[{"reportingCharacteristicsId":1,"value":91},{"reportingCharacteristicsId":2,"value":0},{"reportingCharacteristicsId":3,"value":16}],"checkForMissingInSource":true,"checkForMissingInTarget":true,"checkForExistInBoth":true,"dataRetention":null,"dropSourceData":false,"compareOnSource":false,"passThreshold":null,"informationThreshold":null,"warningThreshold":null,"autoMapNew":false,"unSelectedColumns":{"srcUnmappedCols":["revisioncreateddatetimeutc"],"tgtUnmappedCols":null},"rerun":false,"externalLinkForJira":null,"externalLinkForXray":null,"varianceRoundOff":4,"variancePercentageRoundOff":4}
+106
+106
+2024-08-23 08:45:05.529 [pool-403-thread-1] INFO  c.r.web.End2EndRestController$1:656 - 1 Log save - true
+2024-08-23 08:45:05.529 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:161 - Source type: RDBMS
+2024-08-23 08:45:05.529 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:162 - Target type: RDBMS
+106
+2024-08-23 08:45:05.699 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdateSessionMonitor?ScenarioName=Return_Device_identifier+-+Us-Active&ScenarioId=S_5882&SessionId=10&StartTime=&EndTime=&Phase=sourceingest&StatusFlag=T&IsStopped=false&StoppedBy=&StoppedAt=&Duration=0&Count=0&ErrorMessage=&TechnicalMessage=&IsFromQuery=false&IsFromValidation=false&CompareType=both&Status=Started&StepId=1&JobId=0&JobSession=0&TotalDatapointsYet=0&CurrentState=Started&RecordsCountWithTransformation=0&DatapointsCountWithTransformation=0
+2024-08-23 08:45:05.715 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:45:05.715 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:45:05.885 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdateSessionMonitor?ScenarioName=Return_Device_identifier+-+Us-Active&ScenarioId=S_5882&SessionId=10&StartTime=&EndTime=&Phase=targetingest&StatusFlag=T&IsStopped=false&StoppedBy=&StoppedAt=&Duration=0&Count=0&ErrorMessage=&TechnicalMessage=&IsFromQuery=false&IsFromValidation=false&CompareType=both&Status=Started&StepId=2&JobId=0&JobSession=0&TotalDatapointsYet=0&CurrentState=Started&RecordsCountWithTransformation=0&DatapointsCountWithTransformation=0
+2024-08-23 08:45:05.885 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:656 - 1 Log save - true
+2024-08-23 08:45:05.885 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:143 - connection: jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false
+2024-08-23 08:45:05.885 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:150 - connection: jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false
+2024-08-23 08:45:05.916 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:45:05.916 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:45:06.057 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:656 - 1 Log save - true
+2024-08-23 08:45:06.057 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:143 - connection: jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false
+2024-08-23 08:45:06.057 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:150 - connection: jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false
+2024-08-23 08:45:06.243 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:1423 - jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false
+2024-08-23 08:45:06.243 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:1431 - jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false
+2024-08-23 08:45:06.243 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:1514 - After selected fields!
+2024-08-23 08:45:06.243 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:1525 - Source is not a QC!
+2024-08-23 08:45:06.243 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:261 - isInsertByPackets: true
+2024-08-23 08:45:06.243 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:265 - isInsertByPackets: true
+2024-08-23 08:45:06.243 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:275 - SELECT *
+FROM QC_1870_CUR
+2024-08-23 08:45:06.243 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:281 - Packetsize: 0.0
+2024-08-23 08:45:06.243 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:339 - Querying by packets - false
+2024-08-23 08:45:06.243 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:540 - Records in packet - 0
+2024-08-23 08:45:06.243 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:541 - Total packets count - 1
+2024-08-23 08:45:06.243 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:543 - Target database table - rightdata_db.S_5882_10_SOURCE
+2024-08-23 08:45:06.373 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:3103 - connectionJDBCURL - jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false
+2024-08-23 08:45:06.373 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:3277 - ConnectionJDBCURL - jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false;CharacterSet=UTF-8
+2024-08-23 08:45:06.483 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:1423 - jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false
+2024-08-23 08:45:06.483 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:1431 - jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false
+2024-08-23 08:45:06.483 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:1514 - After selected fields!
+2024-08-23 08:45:06.483 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:1525 - Source is not a QC!
+2024-08-23 08:45:06.483 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:261 - isInsertByPackets: true
+2024-08-23 08:45:06.483 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:265 - isInsertByPackets: true
+2024-08-23 08:45:06.483 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:275 - SELECT *
+FROM QC_1871_CUR
+2024-08-23 08:45:06.483 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:281 - Packetsize: 0.0
+2024-08-23 08:45:06.483 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:339 - Querying by packets - false
+2024-08-23 08:45:06.483 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:540 - Records in packet - 0
+2024-08-23 08:45:06.483 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:541 - Total packets count - 1
+2024-08-23 08:45:06.483 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:543 - Target database table - rightdata_db.S_5882_10_TARGET
+2024-08-23 08:45:06.592 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:1679 - Remote query: SELECT *
+FROM QC_1870_CUR
+2024-08-23 08:45:06.607 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:3103 - connectionJDBCURL - jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false
+2024-08-23 08:45:06.607 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:3277 - ConnectionJDBCURL - jdbc:sqlserver://azryaodmssql001.database.windows.net;databaseName=rightdata_db;integratedSecurity=false;CharacterSet=UTF-8
+2024-08-23 08:45:06.623 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:3378 - Columns: ROW_NUM INT IDENTITY(1,1), [di] NVARCHAR(MAX), [di_issuing_agency] NVARCHAR(MAX), [di_level] NVARCHAR(MAX), [data_scope] NVARCHAR(MAX), [active_approved] NVARCHAR(MAX), [device_additional_info_url] NVARCHAR(MAX), [eu_annex_xvi_non_medical_impact_adipose_tissue_flag] NVARCHAR(MAX), [eu_annex_xvi_non_medical_brain_electrosimulation_flag] NVARCHAR(MAX), [budi] NVARCHAR(MAX), [budi_issuing_agency] NVARCHAR(MAX), [combination_product] NVARCHAR(MAX), [nmpa_classification_code] NVARCHAR(MAX), [commercial_distribution_end_date] NVARCHAR(MAX), [consumable_or_equipment] NVARCHAR(MAX), [eu_annex_xvi_non_medical_contact_lenses_flag] NVARCHAR(MAX), [contains_natural_rubber_flag] NVARCHAR(MAX), [contains_phthalates] NVARCHAR(MAX), [expiration_date_flag] NVARCHAR(MAX), [lot_batch_num_flag] NVARCHAR(MAX), [manufacturing_date_flag] NVARCHAR(MAX), [serial_num_flag] NVARCHAR(MAX), [software_version_flag] NVARCHAR(MAX), [udi_opco] NVARCHAR(MAX), [device_count] NVARCHAR(MAX), [device_ivd_reagents] NVARCHAR(MAX), [registrant_or_filer_name] NVARCHAR(MAX), [registrant_or_filer_name_english] NVARCHAR(MAX), [device_status] NVARCHAR(MAX), [di_record_publish_date] NVARCHAR(MAX), [issuing_agency_direct_marking_di] NVARCHAR(MAX), [direct_marking_di] NVARCHAR(MAX), [benefit_reimbursement_eligible] NVARCHAR(MAX), [eu_annex_xvi_non_medical_high_emr_flag] NVARCHAR(MAX), [eu_annex_xvi_non_medical_dermal_injection_filling_flag] NVARCHAR(MAX), [has_dm_di_flag] NVARCHAR(MAX), [dm_di_same_as_primary_di] NVARCHAR(MAX), [primary_di_same_as_registered_or_filed_di] NVARCHAR(MAX), [kit] NVARCHAR(MAX), [device_max_reuses] NVARCHAR(MAX), [eu_member_state_where_device_is_placed] NVARCHAR(MAX), [mri_safety_status] NVARCHAR(MAX), [requires_sterilization_prior_to_use_flag] NVARCHAR(MAX), [product_designer_srn] NVARCHAR(MAX), [nmpa_original_classification_code] NVARCHAR(MAX), [device_packaged_sterile_flag] NVARCHAR(MAX), [product_generic_name] NVARCHAR(MAX), [eu_annex_xvi_non_medical_introduced_into_human_body_flag] NVARCHAR(MAX), [internal_device_tracking_number] NVARCHAR(MAX), [internal_device_batch_number] NVARCHAR(MAX), [product_sku] NVARCHAR(MAX), [device_discontinuation_reason] NVARCHAR(MAX), [benefit_reimbursement_no_code_reason] NVARCHAR(MAX), [catalog_reference] NVARCHAR(MAX), [registered_or_filed_di] NVARCHAR(MAX), [reprocessed_single_use_device_flag] NVARCHAR(MAX), [for_single_use_flag] NVARCHAR(MAX), [samd_version] NVARCHAR(MAX), [issuing_agency_unit_of_use_di] NVARCHAR(MAX), [unit_of_use_di] NVARCHAR(MAX), [version_or_model] NVARCHAR(MAX), [haveLimitedNoReuses] NVARCHAR(MAX), [revisioncreatedby] NVARCHAR(MAX), [revisioncreateddatetimeutc] NVARCHAR(MAX), [revision] NVARCHAR(MAX), [change_description] NVARCHAR(MAX), [unified_social_credit_code] NVARCHAR(MAX), [not_made_with_natural_rubber_flag] NVARCHAR(MAX), [human_cell_tissue_flag] NVARCHAR(MAX), [subject_to_dm_but_excepted] NVARCHAR(MAX), [labeler_duns_number] NVARCHAR(MAX), [exempt_premarket_submission] NVARCHAR(MAX), [donation_identification_number] NVARCHAR(MAX), [prescription_use_rx] NVARCHAR(MAX), [over_the_counter_otc] NVARCHAR(MAX), [loaner_set_orthopedic_set] NVARCHAR(MAX), [user_sterilization_required_for_orthopedic_products] NVARCHAR(MAX), [channel_revision] NVARCHAR(MAX), [channel_revision_date_time_utc] NVARCHAR(MAX), [attribute_status] NVARCHAR(MAX), [validation_status] NVARCHAR(MAX), [health_authority_derived_state] NVARCHAR(MAX), [submission_data_serviceId] NVARCHAR(MAX), [submission_data_serviceOperation] NVARCHAR(MAX), [submission_data_submissionStatusDate] NVARCHAR(MAX), [submission_data_submissionType] NVARCHAR(MAX), [submission_data_creationDateTime] NVARCHAR(MAX), [submission_data_deviceRecordKey] NVARCHAR(MAX), [submission_data_messageId] NVARCHAR(MAX), [submission_data_correlationId] NVARCHAR(MAX), [submission_data_submissionStatusCodeDescription] NVARCHAR(MAX), [previous_di] NVARCHAR(MAX), [issuing_agency_previous_di] NVARCHAR(MAX), [applicationsubmissionchannels] NVARCHAR(MAX)
+2024-08-23 08:45:06.748 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:1679 - Remote query: SELECT *
+FROM QC_1871_CUR
+2024-08-23 08:45:06.779 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:3378 - Columns: ROW_NUM INT IDENTITY(1,1), [di] NVARCHAR(MAX), [di_issuing_agency] NVARCHAR(MAX), [di_level] NVARCHAR(MAX), [data_scope] NVARCHAR(MAX), [active_approved] NVARCHAR(MAX), [device_additional_info_url] NVARCHAR(MAX), [eu_annex_xvi_non_medical_impact_adipose_tissue_flag] NVARCHAR(MAX), [eu_annex_xvi_non_medical_brain_electrosimulation_flag] NVARCHAR(MAX), [budi] NVARCHAR(MAX), [budi_issuing_agency] NVARCHAR(MAX), [combination_product] NVARCHAR(MAX), [nmpa_classification_code] NVARCHAR(MAX), [commercial_distribution_end_date] NVARCHAR(MAX), [consumable_or_equipment] NVARCHAR(MAX), [eu_annex_xvi_non_medical_contact_lenses_flag] NVARCHAR(MAX), [contains_natural_rubber_flag] NVARCHAR(MAX), [contains_phthalates] NVARCHAR(MAX), [expiration_date_flag] NVARCHAR(MAX), [lot_batch_num_flag] NVARCHAR(MAX), [manufacturing_date_flag] NVARCHAR(MAX), [serial_num_flag] NVARCHAR(MAX), [software_version_flag] NVARCHAR(MAX), [udi_opco] NVARCHAR(MAX), [device_count] NVARCHAR(MAX), [device_ivd_reagents] NVARCHAR(MAX), [registrant_or_filer_name] NVARCHAR(MAX), [registrant_or_filer_name_english] NVARCHAR(MAX), [device_status] NVARCHAR(MAX), [di_record_publish_date] NVARCHAR(MAX), [issuing_agency_direct_marking_di] NVARCHAR(MAX), [direct_marking_di] NVARCHAR(MAX), [benefit_reimbursement_eligible] NVARCHAR(MAX), [eu_annex_xvi_non_medical_high_emr_flag] NVARCHAR(MAX), [eu_annex_xvi_non_medical_dermal_injection_filling_flag] NVARCHAR(MAX), [has_dm_di_flag] NVARCHAR(MAX), [dm_di_same_as_primary_di] NVARCHAR(MAX), [primary_di_same_as_registered_or_filed_di] NVARCHAR(MAX), [kit] NVARCHAR(MAX), [device_max_reuses] NVARCHAR(MAX), [eu_member_state_where_device_is_placed] NVARCHAR(MAX), [mri_safety_status] NVARCHAR(MAX), [requires_sterilization_prior_to_use_flag] NVARCHAR(MAX), [product_designer_srn] NVARCHAR(MAX), [nmpa_original_classification_code] NVARCHAR(MAX), [device_packaged_sterile_flag] NVARCHAR(MAX), [product_generic_name] NVARCHAR(MAX), [eu_annex_xvi_non_medical_introduced_into_human_body_flag] NVARCHAR(MAX), [internal_device_tracking_number] NVARCHAR(MAX), [internal_device_batch_number] NVARCHAR(MAX), [product_sku] NVARCHAR(MAX), [device_discontinuation_reason] NVARCHAR(MAX), [benefit_reimbursement_no_code_reason] NVARCHAR(MAX), [catalog_reference] NVARCHAR(MAX), [registered_or_filed_di] NVARCHAR(MAX), [reprocessed_single_use_device_flag] NVARCHAR(MAX), [for_single_use_flag] NVARCHAR(MAX), [samd_version] NVARCHAR(MAX), [issuing_agency_unit_of_use_di] NVARCHAR(MAX), [unit_of_use_di] NVARCHAR(MAX), [version_or_model] NVARCHAR(MAX), [haveLimitedNoReuses] NVARCHAR(MAX), [revisioncreatedby] NVARCHAR(MAX), [revision] NVARCHAR(MAX), [change_description] NVARCHAR(MAX), [unified_social_credit_code] NVARCHAR(MAX), [not_made_with_natural_rubber_flag] NVARCHAR(MAX), [human_cell_tissue_flag] NVARCHAR(MAX), [subject_to_dm_but_excepted] NVARCHAR(MAX), [labeler_duns_number] NVARCHAR(MAX), [exempt_premarket_submission] NVARCHAR(MAX), [donation_identification_number] NVARCHAR(MAX), [prescription_use_rx] NVARCHAR(MAX), [over_the_counter_otc] NVARCHAR(MAX), [loaner_set_orthopedic_set] NVARCHAR(MAX), [user_sterilization_required_for_orthopedic_products] NVARCHAR(MAX), [attribute_status] NVARCHAR(MAX), [validation_status] NVARCHAR(MAX), [health_authority_state] NVARCHAR(MAX), [channel_revision] NVARCHAR(MAX), [channel_revision_date_time_utc] NVARCHAR(MAX), [submission_data_serviceId] NVARCHAR(MAX), [submission_data_serviceOperation] NVARCHAR(MAX), [submission_data_submissionStatusDate] NVARCHAR(MAX), [submission_data_submissionType] NVARCHAR(MAX), [submission_data_creationDateTime] NVARCHAR(MAX), [submission_data_deviceRecordKey] NVARCHAR(MAX), [submission_data_messageId] NVARCHAR(MAX), [submission_data_correlationId] NVARCHAR(MAX), [submission_data_submissionStatusCodeDescription] NVARCHAR(MAX), [previous_di] NVARCHAR(MAX), [issuing_agency_previous_di] NVARCHAR(MAX), [applicable_submission_channel] NVARCHAR(MAX)
+2024-08-23 08:45:26.923 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:2111 - End of packet
+2024-08-23 08:45:27.052 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:2154 - rightdata_db.S_5882_10_TARGET - New ingestion data load - 265813
+2024-08-23 08:46:50.728 [pool-404-thread-2] INFO  c.r.p.PersistRightdataPacketsHeaderServiceImpl:79 - Transaction active status - true
+2024-08-23 08:46:50.872 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:4710 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdatePacketization?ScenarioName=Return_Device_identifier+-+Us-Active&ScenarioId=S_5882&SessionId=10&PacketNo=1&RecordsInCurrentPacket=265813&TotalRecordsYet=265813&IsSource=false&IsTarget=true&IsTDR=false&PairNumber=0&IsValidation=false&StartTime=Aug+23%2C+2024+8%3A45%3A05+AM&TotalDatapointsYet=24454796&TotalPackets=1&CurrentTime=Aug+23%2C+2024+8%3A46%3A50+AM&Message=TARGET+-+Ingested+265813+plain+records.+Total+records+ingested+-+265813+%28packet+-+1%2F1%29.&StepId=2&Transformation=false&LastStep=true&ErrorMessage=&TableName=
+2024-08-23 08:46:50.904 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:4716 - Response Code : 200
+2024-08-23 08:46:50.904 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:4722 - 
+2024-08-23 08:46:51.122 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:1254 - Remote connection closed!
+com.microsoft.sqlserver.jdbc.SQLServerException: Column 'di' in table 'rightdata_db.dbo.S_5882_10_TARGET' is of a type that is invalid for use as a key column in an index.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:254)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1608)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:859)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:759)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7240)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:2869)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:243)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:218)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeUpdate(SQLServerStatement.java:706)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:117)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at com.rightdata.rdbms.IngestQuery.createIndex(IngestQuery.java:1091)
+	at com.rightdata.rdbms.IngestQuery.runQueryScenario(IngestQuery.java:744)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:3897)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2024-08-23 08:46:51.164 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:745 - bulk inserted table
+2024-08-23 08:46:51.164 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:746 - Ingest query log message type - END2END
+2024-08-23 08:46:51.328 [pool-404-thread-2] INFO  com.rightdata.rdbms.IngestQuery:656 - 1 Log save - true
+com.microsoft.sqlserver.jdbc.SQLServerException: Read timed out
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:2826)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.read(IOBuffer.java:1979)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readPacket(IOBuffer.java:6369)
+	at com.microsoft.sqlserver.jdbc.TDSReader.nextPacket(IOBuffer.java:6323)
+	at com.microsoft.sqlserver.jdbc.TDSReader.ensurePayload(IOBuffer.java:6301)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readBytes(IOBuffer.java:6600)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readWrappedBytes(IOBuffer.java:6621)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readInt(IOBuffer.java:6570)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readUnsignedInt(IOBuffer.java:6584)
+	at com.microsoft.sqlserver.jdbc.PLPInputStream.readBytesInternal(PLPInputStream.java:307)
+	at com.microsoft.sqlserver.jdbc.PLPInputStream.getBytes(PLPInputStream.java:109)
+	at com.microsoft.sqlserver.jdbc.DDC.convertStreamToObject(DDC.java:637)
+	at com.microsoft.sqlserver.jdbc.ServerDTVImpl.getValue(dtv.java:3733)
+	at com.microsoft.sqlserver.jdbc.DTV.getValue(dtv.java:246)
+	at com.microsoft.sqlserver.jdbc.Column.getValue(Column.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2037)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2023)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getString(SQLServerResultSet.java:2454)
+	at com.rightdata.rdbms.IngestQuery.insertIntoTable(IngestQuery.java:1873)
+	at com.rightdata.rdbms.IngestQuery.ingestPackets(IngestQuery.java:1161)
+	at com.rightdata.rdbms.IngestQuery.runQueryScenario(IngestQuery.java:553)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:3897)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: javax.net.ssl.SSLException: Read timed out
+	at sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:262)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:138)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1400)
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1368)
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73)
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:962)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.read(IOBuffer.java:1971)
+	... 25 more
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+		at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+		at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyOutputStream.writeInternal(IOBuffer.java:1095)
+		at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyOutputStream.write(IOBuffer.java:1088)
+		at sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:81)
+		at sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
+		... 33 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.readInternal(IOBuffer.java:999)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.read(IOBuffer.java:989)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464)
+	at sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:237)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:190)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:109)
+	... 30 more
+com.microsoft.sqlserver.jdbc.SQLServerException: Read timed out
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:2826)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.read(IOBuffer.java:1979)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readPacket(IOBuffer.java:6369)
+	at com.microsoft.sqlserver.jdbc.TDSReader.nextPacket(IOBuffer.java:6323)
+	at com.microsoft.sqlserver.jdbc.TDSReader.ensurePayload(IOBuffer.java:6301)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readBytes(IOBuffer.java:6600)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readWrappedBytes(IOBuffer.java:6621)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readInt(IOBuffer.java:6570)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readUnsignedInt(IOBuffer.java:6584)
+	at com.microsoft.sqlserver.jdbc.PLPInputStream.readBytesInternal(PLPInputStream.java:307)
+	at com.microsoft.sqlserver.jdbc.PLPInputStream.getBytes(PLPInputStream.java:109)
+	at com.microsoft.sqlserver.jdbc.DDC.convertStreamToObject(DDC.java:637)
+	at com.microsoft.sqlserver.jdbc.ServerDTVImpl.getValue(dtv.java:3733)
+	at com.microsoft.sqlserver.jdbc.DTV.getValue(dtv.java:246)
+	at com.microsoft.sqlserver.jdbc.Column.getValue(Column.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2037)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2023)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getString(SQLServerResultSet.java:2454)
+	at com.rightdata.rdbms.IngestQuery.insertIntoTable(IngestQuery.java:1873)
+	at com.rightdata.rdbms.IngestQuery.ingestPackets(IngestQuery.java:1161)
+	at com.rightdata.rdbms.IngestQuery.runQueryScenario(IngestQuery.java:553)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:3897)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: javax.net.ssl.SSLException: Read timed out
+	at sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:262)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:138)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1400)
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1368)
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73)
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:962)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.read(IOBuffer.java:1971)
+	... 25 more
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+		at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+		at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyOutputStream.writeInternal(IOBuffer.java:1095)
+		at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyOutputStream.write(IOBuffer.java:1088)
+		at sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:81)
+		at sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
+		... 33 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.readInternal(IOBuffer.java:999)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.read(IOBuffer.java:989)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464)
+	at sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:237)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:190)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:109)
+	... 30 more
+com.microsoft.sqlserver.jdbc.SQLServerException: Read timed out
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:2826)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.read(IOBuffer.java:1979)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readPacket(IOBuffer.java:6369)
+	at com.microsoft.sqlserver.jdbc.TDSReader.nextPacket(IOBuffer.java:6323)
+	at com.microsoft.sqlserver.jdbc.TDSReader.ensurePayload(IOBuffer.java:6301)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readBytes(IOBuffer.java:6600)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readWrappedBytes(IOBuffer.java:6621)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readInt(IOBuffer.java:6570)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readUnsignedInt(IOBuffer.java:6584)
+	at com.microsoft.sqlserver.jdbc.PLPInputStream.readBytesInternal(PLPInputStream.java:307)
+	at com.microsoft.sqlserver.jdbc.PLPInputStream.getBytes(PLPInputStream.java:129)
+	at com.microsoft.sqlserver.jdbc.DDC.convertStreamToObject(DDC.java:637)
+	at com.microsoft.sqlserver.jdbc.ServerDTVImpl.getValue(dtv.java:3733)
+	at com.microsoft.sqlserver.jdbc.DTV.getValue(dtv.java:246)
+	at com.microsoft.sqlserver.jdbc.Column.getValue(Column.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2037)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2023)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getString(SQLServerResultSet.java:2454)
+	at com.rightdata.rdbms.IngestQuery.insertIntoTable(IngestQuery.java:1873)
+	at com.rightdata.rdbms.IngestQuery.ingestPackets(IngestQuery.java:1161)
+	at com.rightdata.rdbms.IngestQuery.runQueryScenario(IngestQuery.java:553)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:3897)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: javax.net.ssl.SSLException: Read timed out
+	at sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:262)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:138)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1400)
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1368)
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73)
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:962)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.read(IOBuffer.java:1971)
+	... 25 more
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+		at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+		at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyOutputStream.writeInternal(IOBuffer.java:1095)
+		at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyOutputStream.write(IOBuffer.java:1088)
+		at sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:81)
+		at sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
+		... 33 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.readInternal(IOBuffer.java:999)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.read(IOBuffer.java:989)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464)
+	at sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:237)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:190)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:109)
+	... 30 more
+com.microsoft.sqlserver.jdbc.SQLServerException: Read timed out
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:2826)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.read(IOBuffer.java:1979)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readPacket(IOBuffer.java:6369)
+	at com.microsoft.sqlserver.jdbc.TDSReader.nextPacket(IOBuffer.java:6323)
+	at com.microsoft.sqlserver.jdbc.TDSReader.ensurePayload(IOBuffer.java:6301)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readBytes(IOBuffer.java:6600)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readWrappedBytes(IOBuffer.java:6621)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readInt(IOBuffer.java:6570)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readUnsignedInt(IOBuffer.java:6584)
+	at com.microsoft.sqlserver.jdbc.PLPInputStream.readBytesInternal(PLPInputStream.java:307)
+	at com.microsoft.sqlserver.jdbc.PLPInputStream.getBytes(PLPInputStream.java:129)
+	at com.microsoft.sqlserver.jdbc.DDC.convertStreamToObject(DDC.java:637)
+	at com.microsoft.sqlserver.jdbc.ServerDTVImpl.getValue(dtv.java:3733)
+	at com.microsoft.sqlserver.jdbc.DTV.getValue(dtv.java:246)
+	at com.microsoft.sqlserver.jdbc.Column.getValue(Column.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2037)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2023)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getString(SQLServerResultSet.java:2454)
+	at com.rightdata.rdbms.IngestQuery.insertIntoTable(IngestQuery.java:1873)
+	at com.rightdata.rdbms.IngestQuery.ingestPackets(IngestQuery.java:1161)
+	at com.rightdata.rdbms.IngestQuery.runQueryScenario(IngestQuery.java:553)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:3897)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: javax.net.ssl.SSLException: Read timed out
+	at sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:262)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:138)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1400)
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1368)
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73)
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:962)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.read(IOBuffer.java:1971)
+	... 25 more
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+		at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+		at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyOutputStream.writeInternal(IOBuffer.java:1095)
+		at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyOutputStream.write(IOBuffer.java:1088)
+		at sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:81)
+		at sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
+		... 33 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.readInternal(IOBuffer.java:999)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.read(IOBuffer.java:989)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464)
+	at sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:237)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:190)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:109)
+	... 30 more
+2024-08-23 08:49:59.890 [pool-400-thread-1] INFO  c.r.p.PersistRightdataPacketsHeaderServiceImpl:79 - Transaction active status - true
+2024-08-23 08:50:00.054 [pool-400-thread-1] INFO  com.rightdata.rdbms.IngestQuery:4710 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdatePacketization?ScenarioName=Return_Device_identifier+-+Eudamed-Active&ScenarioId=S_5886&SessionId=4&PacketNo=0&RecordsInCurrentPacket=0&TotalRecordsYet=-1&IsSource=true&IsTarget=false&IsTDR=false&PairNumber=0&IsValidation=false&StartTime=Aug+23%2C+2024+8%3A44%3A47+AM&TotalDatapointsYet=-1&TotalPackets=1&CurrentTime=Aug+23%2C+2024+8%3A50%3A00+AM&Message=SOURCE+-+Read+timed+out&StepId=1&Transformation=true&LastStep=false&ErrorMessage=Read+timed+out&TableName=
+2024-08-23 08:50:00.073 [pool-400-thread-2] INFO  c.r.p.PersistRightdataPacketsHeaderServiceImpl:79 - Transaction active status - true
+2024-08-23 08:50:00.083 [pool-400-thread-1] INFO  com.rightdata.rdbms.IngestQuery:4716 - Response Code : 200
+2024-08-23 08:50:00.084 [pool-400-thread-1] INFO  com.rightdata.rdbms.IngestQuery:4722 - 
+2024-08-23 08:50:00.084 [pool-400-thread-1] INFO  com.rightdata.rdbms.IngestQuery:1254 - Remote connection closed!
+java.lang.RuntimeException: Read timed out
+	at com.rightdata.rdbms.IngestQuery.ingestPackets(IngestQuery.java:1241)
+	at com.rightdata.rdbms.IngestQuery.runQueryScenario(IngestQuery.java:553)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:3897)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2024-08-23 08:50:00.212 [pool-400-thread-2] INFO  com.rightdata.rdbms.IngestQuery:4710 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdatePacketization?ScenarioName=Return_Device_identifier+-+Eudamed-Active&ScenarioId=S_5886&SessionId=4&PacketNo=0&RecordsInCurrentPacket=0&TotalRecordsYet=-1&IsSource=false&IsTarget=true&IsTDR=false&PairNumber=0&IsValidation=false&StartTime=Aug+23%2C+2024+8%3A44%3A47+AM&TotalDatapointsYet=-1&TotalPackets=1&CurrentTime=Aug+23%2C+2024+8%3A50%3A00+AM&Message=TARGET+-+Read+timed+out&StepId=2&Transformation=true&LastStep=false&ErrorMessage=Read+timed+out&TableName=
+2024-08-23 08:50:00.243 [pool-400-thread-1] INFO  c.r.p.PersistRightdataPacketsHeaderServiceImpl:79 - Transaction active status - true
+2024-08-23 08:50:00.243 [pool-400-thread-2] INFO  com.rightdata.rdbms.IngestQuery:4716 - Response Code : 200
+2024-08-23 08:50:00.243 [pool-400-thread-2] INFO  com.rightdata.rdbms.IngestQuery:4722 - 
+2024-08-23 08:50:00.243 [pool-400-thread-2] INFO  com.rightdata.rdbms.IngestQuery:1254 - Remote connection closed!
+java.lang.RuntimeException: Read timed out
+	at com.rightdata.rdbms.IngestQuery.ingestPackets(IngestQuery.java:1241)
+	at com.rightdata.rdbms.IngestQuery.runQueryScenario(IngestQuery.java:553)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:3897)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2024-08-23 08:50:00.383 [pool-400-thread-1] INFO  com.rightdata.rdbms.IngestQuery:4710 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdatePacketization?ScenarioName=Return_Device_identifier+-+Eudamed-Active&ScenarioId=S_5886&SessionId=4&PacketNo=0&RecordsInCurrentPacket=0&TotalRecordsYet=-1&IsSource=true&IsTarget=false&IsTDR=false&PairNumber=0&IsValidation=false&StartTime=Aug+23%2C+2024+8%3A44%3A47+AM&TotalDatapointsYet=-1&TotalPackets=1&CurrentTime=Aug+23%2C+2024+8%3A50%3A00+AM&Message=SOURCE+-+Read+timed+out&StepId=1&Transformation=true&LastStep=false&ErrorMessage=Read+timed+out&TableName=
+2024-08-23 08:50:00.415 [pool-400-thread-2] INFO  c.r.p.PersistRightdataPacketsHeaderServiceImpl:79 - Transaction active status - true
+2024-08-23 08:50:00.415 [pool-400-thread-1] INFO  com.rightdata.rdbms.IngestQuery:4716 - Response Code : 200
+2024-08-23 08:50:00.415 [pool-400-thread-1] INFO  com.rightdata.rdbms.IngestQuery:4722 - 
+java.lang.RuntimeException: Read timed out
+	at com.rightdata.rdbms.IngestQuery.runQueryScenario(IngestQuery.java:776)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:3897)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2024-08-23 08:50:00.558 [pool-400-thread-2] INFO  com.rightdata.rdbms.IngestQuery:4710 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdatePacketization?ScenarioName=Return_Device_identifier+-+Eudamed-Active&ScenarioId=S_5886&SessionId=4&PacketNo=0&RecordsInCurrentPacket=0&TotalRecordsYet=-1&IsSource=false&IsTarget=true&IsTDR=false&PairNumber=0&IsValidation=false&StartTime=Aug+23%2C+2024+8%3A44%3A47+AM&TotalDatapointsYet=-1&TotalPackets=1&CurrentTime=Aug+23%2C+2024+8%3A50%3A00+AM&Message=TARGET+-+Read+timed+out&StepId=2&Transformation=true&LastStep=false&ErrorMessage=Read+timed+out&TableName=
+2024-08-23 08:50:00.595 [pool-400-thread-2] INFO  com.rightdata.rdbms.IngestQuery:4716 - Response Code : 200
+2024-08-23 08:50:00.595 [pool-400-thread-2] INFO  com.rightdata.rdbms.IngestQuery:4722 - 
+java.lang.RuntimeException: Read timed out
+	at com.rightdata.rdbms.IngestQuery.runQueryScenario(IngestQuery.java:776)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:3897)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2024-08-23 08:50:00.625 [pool-400-thread-1] INFO  com.rightdata.rdbms.IngestQuery:656 - 1 Log save - true
+2024-08-23 08:50:00.801 [pool-400-thread-2] INFO  com.rightdata.rdbms.IngestQuery:656 - 1 Log save - true
+2024-08-23 08:50:01.056 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdateSessionMonitor?ScenarioName=Return_Device_identifier+-+Eudamed-Active&ScenarioId=S_5886&SessionId=4&StartTime=Aug+23%2C+2024+8%3A44%3A47+AM&EndTime=&Phase=sourceingest&StatusFlag=E&IsStopped=false&StoppedBy=null&StoppedAt=null&Duration=313&Count=-1&ErrorMessage=Read+timed+out&TechnicalMessage=Read+timed+out&IsFromQuery=false&IsFromValidation=false&CompareType=both&Status=Completed&StepId=1&JobId=0&JobSession=0&TotalDatapointsYet=-1&CurrentState=Completed&RecordsCountWithTransformation=-1&DatapointsCountWithTransformation=-1
+2024-08-23 08:50:01.082 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:01.082 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:50:01.313 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdateSessionMonitor?ScenarioName=Return_Device_identifier+-+Eudamed-Active&ScenarioId=S_5886&SessionId=4&StartTime=Aug+23%2C+2024+8%3A44%3A47+AM&EndTime=&Phase=targetingest&StatusFlag=E&IsStopped=false&StoppedBy=null&StoppedAt=null&Duration=313&Count=-1&ErrorMessage=Read+timed+out&TechnicalMessage=Read+timed+out&IsFromQuery=false&IsFromValidation=false&CompareType=both&Status=Completed&StepId=2&JobId=0&JobSession=0&TotalDatapointsYet=-1&CurrentState=Completed&RecordsCountWithTransformation=-1&DatapointsCountWithTransformation=-1
+2024-08-23 08:50:01.345 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:01.345 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:50:01.345 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:837 - rightdata_db.S_5886_4
+106
+2024-08-23 08:50:01.345 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:891 - [{"reportingCharacteristicsId":"1","value":"91"},{"reportingCharacteristicsId":"2","value":"0"},{"reportingCharacteristicsId":"3","value":"16"}]
+2024-08-23 08:50:01.499 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdateSessionMonitor?ScenarioName=Return_Device_identifier+-+Eudamed-Active&ScenarioId=S_5886&SessionId=4&StartTime=&EndTime=&Phase=compare&StatusFlag=T&IsStopped=false&StoppedBy=&StoppedAt=&Duration=0&Count=0&ErrorMessage=&TechnicalMessage=&IsFromQuery=false&IsFromValidation=false&CompareType=both&Status=Started&StepId=3&JobId=0&JobSession=0&TotalDatapointsYet=0&CurrentState=Started&RecordsCountWithTransformation=0&DatapointsCountWithTransformation=0
+2024-08-23 08:50:01.531 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:01.531 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+com.microsoft.sqlserver.jdbc.SQLServerException: Read timed out
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:2826)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.read(IOBuffer.java:1979)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readPacket(IOBuffer.java:6369)
+	at com.microsoft.sqlserver.jdbc.TDSReader.nextPacket(IOBuffer.java:6323)
+	at com.microsoft.sqlserver.jdbc.TDSReader.ensurePayload(IOBuffer.java:6301)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readBytes(IOBuffer.java:6600)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readWrappedBytes(IOBuffer.java:6621)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readInt(IOBuffer.java:6570)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readUnsignedInt(IOBuffer.java:6584)
+	at com.microsoft.sqlserver.jdbc.PLPInputStream.readBytesInternal(PLPInputStream.java:307)
+	at com.microsoft.sqlserver.jdbc.PLPInputStream.getBytes(PLPInputStream.java:109)
+	at com.microsoft.sqlserver.jdbc.DDC.convertStreamToObject(DDC.java:637)
+	at com.microsoft.sqlserver.jdbc.ServerDTVImpl.getValue(dtv.java:3733)
+	at com.microsoft.sqlserver.jdbc.DTV.getValue(dtv.java:246)
+	at com.microsoft.sqlserver.jdbc.Column.getValue(Column.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2037)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2023)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getString(SQLServerResultSet.java:2454)
+	at com.rightdata.rdbms.IngestQuery.insertIntoTable(IngestQuery.java:1873)
+	at com.rightdata.rdbms.IngestQuery.ingestPackets(IngestQuery.java:1161)
+	at com.rightdata.rdbms.IngestQuery.runQueryScenario(IngestQuery.java:553)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:3897)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: javax.net.ssl.SSLException: Read timed out
+	at sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:262)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:138)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1400)
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1368)
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73)
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:962)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.read(IOBuffer.java:1971)
+	... 25 more
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+		at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+		at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyOutputStream.writeInternal(IOBuffer.java:1095)
+		at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyOutputStream.write(IOBuffer.java:1088)
+		at sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:81)
+		at sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
+		... 33 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.readInternal(IOBuffer.java:999)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.read(IOBuffer.java:989)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464)
+	at sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:237)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:190)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:109)
+	... 30 more
+com.microsoft.sqlserver.jdbc.SQLServerException: Read timed out
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:2826)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.read(IOBuffer.java:1979)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readPacket(IOBuffer.java:6369)
+	at com.microsoft.sqlserver.jdbc.TDSReader.nextPacket(IOBuffer.java:6323)
+	at com.microsoft.sqlserver.jdbc.TDSReader.ensurePayload(IOBuffer.java:6301)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readBytes(IOBuffer.java:6600)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readWrappedBytes(IOBuffer.java:6621)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readInt(IOBuffer.java:6570)
+	at com.microsoft.sqlserver.jdbc.TDSReader.readUnsignedInt(IOBuffer.java:6584)
+	at com.microsoft.sqlserver.jdbc.PLPInputStream.readBytesInternal(PLPInputStream.java:307)
+	at com.microsoft.sqlserver.jdbc.PLPInputStream.getBytes(PLPInputStream.java:109)
+	at com.microsoft.sqlserver.jdbc.DDC.convertStreamToObject(DDC.java:637)
+	at com.microsoft.sqlserver.jdbc.ServerDTVImpl.getValue(dtv.java:3733)
+	at com.microsoft.sqlserver.jdbc.DTV.getValue(dtv.java:246)
+	at com.microsoft.sqlserver.jdbc.Column.getValue(Column.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2037)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2023)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getString(SQLServerResultSet.java:2454)
+	at com.rightdata.rdbms.IngestQuery.insertIntoTable(IngestQuery.java:1873)
+	at com.rightdata.rdbms.IngestQuery.ingestPackets(IngestQuery.java:1161)
+	at com.rightdata.rdbms.IngestQuery.runQueryScenario(IngestQuery.java:553)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:3897)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: javax.net.ssl.SSLException: Read timed out
+	at sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:262)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:138)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1400)
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1368)
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73)
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:962)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.read(IOBuffer.java:1971)
+	... 25 more
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+		at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+		at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyOutputStream.writeInternal(IOBuffer.java:1095)
+		at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyOutputStream.write(IOBuffer.java:1088)
+		at sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:81)
+		at sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
+		... 33 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.readInternal(IOBuffer.java:999)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.read(IOBuffer.java:989)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464)
+	at sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:237)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:190)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:109)
+	... 30 more
+2024-08-23 08:50:17.426 [pool-404-thread-1] INFO  c.r.p.PersistRightdataPacketsHeaderServiceImpl:79 - Transaction active status - true
+2024-08-23 08:50:17.581 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:4710 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdatePacketization?ScenarioName=Return_Device_identifier+-+Us-Active&ScenarioId=S_5882&SessionId=10&PacketNo=0&RecordsInCurrentPacket=0&TotalRecordsYet=-1&IsSource=true&IsTarget=false&IsTDR=false&PairNumber=0&IsValidation=false&StartTime=Aug+23%2C+2024+8%3A45%3A05+AM&TotalDatapointsYet=-1&TotalPackets=1&CurrentTime=Aug+23%2C+2024+8%3A50%3A17+AM&Message=SOURCE+-+Read+timed+out&StepId=1&Transformation=true&LastStep=false&ErrorMessage=Read+timed+out&TableName=
+2024-08-23 08:50:17.601 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:4716 - Response Code : 200
+2024-08-23 08:50:17.601 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:4722 - 
+2024-08-23 08:50:17.601 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:1254 - Remote connection closed!
+java.lang.RuntimeException: Read timed out
+	at com.rightdata.rdbms.IngestQuery.ingestPackets(IngestQuery.java:1241)
+	at com.rightdata.rdbms.IngestQuery.runQueryScenario(IngestQuery.java:553)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:3897)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2024-08-23 08:50:17.627 [pool-404-thread-1] INFO  c.r.p.PersistRightdataPacketsHeaderServiceImpl:79 - Transaction active status - true
+2024-08-23 08:50:17.764 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:4710 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdatePacketization?ScenarioName=Return_Device_identifier+-+Us-Active&ScenarioId=S_5882&SessionId=10&PacketNo=0&RecordsInCurrentPacket=0&TotalRecordsYet=-1&IsSource=true&IsTarget=false&IsTDR=false&PairNumber=0&IsValidation=false&StartTime=Aug+23%2C+2024+8%3A45%3A05+AM&TotalDatapointsYet=-1&TotalPackets=1&CurrentTime=Aug+23%2C+2024+8%3A50%3A17+AM&Message=SOURCE+-+Read+timed+out&StepId=1&Transformation=true&LastStep=false&ErrorMessage=Read+timed+out&TableName=
+2024-08-23 08:50:17.795 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:4716 - Response Code : 200
+2024-08-23 08:50:17.795 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:4722 - 
+java.lang.RuntimeException: Read timed out
+	at com.rightdata.rdbms.IngestQuery.runQueryScenario(IngestQuery.java:776)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:3897)
+	at com.rightdata.rdbms.IngestQuery.call(IngestQuery.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2024-08-23 08:50:17.987 [pool-404-thread-1] INFO  com.rightdata.rdbms.IngestQuery:656 - 1 Log save - true
+2024-08-23 08:50:18.226 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdateSessionMonitor?ScenarioName=Return_Device_identifier+-+Us-Active&ScenarioId=S_5882&SessionId=10&StartTime=Aug+23%2C+2024+8%3A45%3A05+AM&EndTime=&Phase=sourceingest&StatusFlag=E&IsStopped=false&StoppedBy=null&StoppedAt=null&Duration=312&Count=-1&ErrorMessage=Read+timed+out&TechnicalMessage=Read+timed+out&IsFromQuery=false&IsFromValidation=false&CompareType=both&Status=Completed&StepId=1&JobId=0&JobSession=0&TotalDatapointsYet=-1&CurrentState=Completed&RecordsCountWithTransformation=-1&DatapointsCountWithTransformation=-1
+2024-08-23 08:50:18.251 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:18.251 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:50:18.589 [pool-403-thread-1] INFO  c.r.p.PersistRightdataPacketsHeaderServiceImpl:194 - Scenario: S_5882;Session: 10;Source: false;Target: true;Transform: false;List size - 1
+2024-08-23 08:50:18.589 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdateSessionMonitor?ScenarioName=Return_Device_identifier+-+Us-Active&ScenarioId=S_5882&SessionId=10&StartTime=Aug+23%2C+2024+8%3A45%3A05+AM&EndTime=&Phase=targetingest&StatusFlag=P&IsStopped=false&StoppedBy=null&StoppedAt=null&Duration=105&Count=265813&ErrorMessage=&TechnicalMessage=&IsFromQuery=false&IsFromValidation=false&CompareType=both&Status=Completed&StepId=2&JobId=0&JobSession=0&TotalDatapointsYet=24454796&CurrentState=Completed&RecordsCountWithTransformation=0&DatapointsCountWithTransformation=0
+2024-08-23 08:50:18.621 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:18.621 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:50:18.621 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:837 - rightdata_db.S_5882_10
+106
+2024-08-23 08:50:18.621 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:891 - [{"reportingCharacteristicsId":"1","value":"91"},{"reportingCharacteristicsId":"2","value":"0"},{"reportingCharacteristicsId":"3","value":"16"}]
+2024-08-23 08:50:18.787 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdateSessionMonitor?ScenarioName=Return_Device_identifier+-+Us-Active&ScenarioId=S_5882&SessionId=10&StartTime=&EndTime=&Phase=compare&StatusFlag=T&IsStopped=false&StoppedBy=&StoppedAt=&Duration=0&Count=0&ErrorMessage=&TechnicalMessage=&IsFromQuery=false&IsFromValidation=false&CompareType=both&Status=Started&StepId=3&JobId=0&JobSession=0&TotalDatapointsYet=0&CurrentState=Started&RecordsCountWithTransformation=0&DatapointsCountWithTransformation=0
+2024-08-23 08:50:18.803 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:18.803 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:50:19.601 [pool-399-thread-1] INFO  c.r.comparison.CompareSourceTarget:656 - 1 Log save - true
+2024-08-23 08:50:20.027 [pool-399-thread-1] INFO  c.r.comparison.CompareSourceTarget:656 - 1 Log save - true
+2024-08-23 08:50:20.027 [pool-399-thread-1] INFO  c.r.s.PersistRightdataFDRSessionHeaderServiceImpl:69 - Waiting for lock release!
+2024-08-23 08:50:20.053 [pool-399-thread-1] INFO  c.r.s.PersistRightdataFDRSessionHeaderServiceImpl:79 - Transaction active status - true
+2024-08-23 08:50:20.208 [pool-399-thread-1] INFO  c.r.s.PersistRightdataFDRSessionHeaderServiceImpl:90 - Lock released!
+2024-08-23 08:50:20.332 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdateSessionMonitor?ScenarioName=Return_Device_identifier+-+Eudamed-Active&ScenarioId=S_5886&SessionId=4&StartTime=Aug+23%2C+2024+8%3A44%3A46+AM&EndTime=08-23-2024+08%3A50%3A20&Phase=compare&StatusFlag=E&IsStopped=false&StoppedBy=&StoppedAt=&Duration=333&Count=0&ErrorMessage=Source%3A+Read+timed+outTarget%3A+Read+timed+out&TechnicalMessage=Source%3A+Read+timed+outTarget%3A+Read+timed+out&IsFromQuery=false&IsFromValidation=false&CompareType=both&Status=Completed&StepId=3&JobId=0&JobSession=0&TotalDatapointsYet=0&CurrentState=Completed&RecordsCountWithTransformation=0&DatapointsCountWithTransformation=0
+2024-08-23 08:50:20.364 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:20.364 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+106
+2024-08-23 08:50:20.694 [pool-399-thread-1] INFO  c.r.web.End2EndRestController$1:656 - 1 Log save - true
+2024-08-23 08:50:20.694 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdatePacketization?ScenarioName=Return_Device_identifier+-+Eudamed-Active&ScenarioId=S_5886&SessionId=4&PacketNo=1&RecordsInCurrentPacket=0&TotalRecordsYet=0&IsSource=false&IsTarget=false&IsTDR=false&PairNumber=0&IsValidation=false&StartTime=Aug+23%2C+2024+8%3A44%3A46+AM&TotalDatapointsYet=0&TotalPackets=0&CurrentTime=Aug+23%2C+2024+8%3A50%3A20+AM&Message=Comparison+done.+Error+-+Source%3A+Read+timed+outTarget%3A+Read+timed+out&StepId=0&LastStep=false
+2024-08-23 08:50:20.710 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:20.710 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:50:20.710 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdateSessionMonitor?ScenarioName=Return_Device_identifier+-+Eudamed-Active&ScenarioId=S_5886&SessionId=4&StartTime=Aug+23%2C+2024+8%3A44%3A46+AM&EndTime=08-23-2024+08%3A50%3A20&Phase=overall&StatusFlag=E&IsStopped=false&StoppedBy=null&StoppedAt=null&Duration=333.807&Count=0&ErrorMessage=&TechnicalMessage=&IsFromQuery=false&IsFromValidation=false&CompareType=both&Status=Completed&StepId=3&JobId=0&JobSession=0&TotalDatapointsYet=-1&CurrentState=Completed&RecordsCountWithTransformation=0&DatapointsCountWithTransformation=0
+2024-08-23 08:50:20.772 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:20.772 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:50:20.772 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/ScenarioExecutionDetails?ExceptionsTable=S_5886_4&SessionId=4&scenarioname=Return_Device_identifier+-+Eudamed-Active&IsAdhoc=false&IsFromValidation=false&ExceptionFound=false&SourceCount=-1&TargetCount=-1&ExceptionCount=0&ValidationSource=&ValidationRuleDetails=&username=rd_sonali&IsSuccess=true&StatusFlag=E
+2024-08-23 08:50:20.914 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:20.914 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:50:20.914 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdateIMDB?ScenarioName=Return_Device_identifier+-+Eudamed-Active&ScenarioId=S_5886&SessionId=4&ResultFlag=E&Type=FDR&RuleId=&IsComposite=false
+2024-08-23 08:50:20.961 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:20.961 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:50:20.961 [pool-399-thread-1] INFO  c.r.d.PersistRightdataDataManagementHeaderServiceImpl:141 - waiting for lock release!
+2024-08-23 08:50:21.023 [pool-399-thread-1] INFO  c.r.d.PersistRightdataDataManagementHeaderServiceImpl:152 - lock released!
+2024-08-23 08:50:21.023 [pool-399-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ExportResultsToEmail.svc/Export?ScenarioId=S_5886&SessoinId=4&IsExceptionsFound=false&IsQuery=false&IsError=false&ErrorMessage=&StepId=&IsFromComposite=false&DependentStepId=&ExceptionsTableName=&DependentScenarioId=&DependentScenarioSession=&IsFromJob=false&JobId=0_0
+2024-08-23 08:50:36.154 [pool-403-thread-1] INFO  c.r.comparison.CompareSourceTarget:656 - 1 Log save - true
+2024-08-23 08:50:36.460 [pool-403-thread-1] INFO  c.r.comparison.CompareSourceTarget:656 - 1 Log save - true
+2024-08-23 08:50:36.507 [pool-403-thread-1] INFO  c.r.s.PersistRightdataFDRSessionHeaderServiceImpl:69 - Waiting for lock release!
+2024-08-23 08:50:36.527 [pool-403-thread-1] INFO  c.r.s.PersistRightdataFDRSessionHeaderServiceImpl:79 - Transaction active status - true
+2024-08-23 08:50:36.678 [pool-403-thread-1] INFO  c.r.s.PersistRightdataFDRSessionHeaderServiceImpl:90 - Lock released!
+2024-08-23 08:50:36.807 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdateSessionMonitor?ScenarioName=Return_Device_identifier+-+Us-Active&ScenarioId=S_5882&SessionId=10&StartTime=Aug+23%2C+2024+8%3A45%3A05+AM&EndTime=08-23-2024+08%3A50%3A36&Phase=compare&StatusFlag=E&IsStopped=false&StoppedBy=&StoppedAt=&Duration=331&Count=0&ErrorMessage=Source%3A+Read+timed+out&TechnicalMessage=Source%3A+Read+timed+out&IsFromQuery=false&IsFromValidation=false&CompareType=both&Status=Completed&StepId=3&JobId=0&JobSession=0&TotalDatapointsYet=0&CurrentState=Completed&RecordsCountWithTransformation=0&DatapointsCountWithTransformation=0
+2024-08-23 08:50:36.838 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:36.838 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+106
+2024-08-23 08:50:37.138 [pool-403-thread-1] INFO  c.r.web.End2EndRestController$1:656 - 1 Log save - true
+2024-08-23 08:50:37.138 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdatePacketization?ScenarioName=Return_Device_identifier+-+Us-Active&ScenarioId=S_5882&SessionId=10&PacketNo=1&RecordsInCurrentPacket=0&TotalRecordsYet=0&IsSource=false&IsTarget=false&IsTDR=false&PairNumber=0&IsValidation=false&StartTime=Aug+23%2C+2024+8%3A45%3A05+AM&TotalDatapointsYet=0&TotalPackets=0&CurrentTime=Aug+23%2C+2024+8%3A50%3A37+AM&Message=Comparison+done.+Error+-+Source%3A+Read+timed+out&StepId=0&LastStep=false
+2024-08-23 08:50:37.159 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:37.159 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:50:37.159 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdateSessionMonitor?ScenarioName=Return_Device_identifier+-+Us-Active&ScenarioId=S_5882&SessionId=10&StartTime=Aug+23%2C+2024+8%3A45%3A05+AM&EndTime=08-23-2024+08%3A50%3A36&Phase=overall&StatusFlag=E&IsStopped=false&StoppedBy=null&StoppedAt=null&Duration=331.63&Count=0&ErrorMessage=&TechnicalMessage=&IsFromQuery=false&IsFromValidation=false&CompareType=both&Status=Completed&StepId=3&JobId=0&JobSession=0&TotalDatapointsYet=-1&CurrentState=Completed&RecordsCountWithTransformation=0&DatapointsCountWithTransformation=0
+2024-08-23 08:50:37.221 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:37.221 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:50:37.221 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/ScenarioExecutionDetails?ExceptionsTable=S_5882_10&SessionId=10&scenarioname=Return_Device_identifier+-+Us-Active&IsAdhoc=false&IsFromValidation=false&ExceptionFound=false&SourceCount=-1&TargetCount=265813&ExceptionCount=0&ValidationSource=&ValidationRuleDetails=&username=RDAdmin&IsSuccess=true&StatusFlag=E
+2024-08-23 08:50:37.330 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:37.330 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:50:37.330 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ServiceForSignalR.svc/UpdateIMDB?ScenarioName=Return_Device_identifier+-+Us-Active&ScenarioId=S_5882&SessionId=10&ResultFlag=E&Type=FDR&RuleId=&IsComposite=false
+2024-08-23 08:50:37.377 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:37.377 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1647 - 
+2024-08-23 08:50:37.377 [pool-403-thread-1] INFO  c.r.d.PersistRightdataDataManagementHeaderServiceImpl:141 - waiting for lock release!
+2024-08-23 08:50:37.456 [pool-403-thread-1] INFO  c.r.d.PersistRightdataDataManagementHeaderServiceImpl:152 - lock released!
+2024-08-23 08:50:37.456 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1635 - http://azryaonvaw0007/Rightdata/ExportResultsToEmail.svc/Export?ScenarioId=S_5882&SessoinId=10&IsExceptionsFound=false&IsQuery=false&IsError=false&ErrorMessage=&StepId=&IsFromComposite=false&DependentStepId=&ExceptionsTableName=&DependentScenarioId=&DependentScenarioSession=&IsFromJob=false&JobId=0_0
+2024-08-23 08:50:45.596 [http-nio-9090-exec-7] WARN  c.r.web.security.JwtRequestFilter:38 - JWT Token does not begin with Bearer String
+2024-08-23 08:50:45.596 [http-nio-9090-exec-7] INFO  c.r.w.EmailNotificationRestController:86 - Raw JSON: {"scenario":"S_5882","session":"10","jobId":null,"jobSession":"10","stepId":"0","intermediateEmail":false,"overallEmail":true,"status":false,"errorMesg":null}
+2024-08-23 08:50:45.626 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1641 - Response Code : 200
+2024-08-23 08:50:45.626 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:1647 - "OK"
+2024-08-23 08:50:45.626 [pool-403-thread-1] DEBUG c.r.web.End2EndRestController:330 - Scenario errored - true; Trigger jira - false
+2024-08-23 08:50:45.626 [pool-403-thread-1] DEBUG c.r.web.End2EndRestController:440 - Scenario errored - true; Trigger Servicenow - false
+2024-08-23 08:50:45.642 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:645 - Updating FDR_MAPPING_HEADER
+2024-08-23 08:50:45.927 [pool-403-thread-1] INFO  c.r.web.End2EndRestController$1:936 - SELECT * FROM dbo.[S_5882_10_AGG_EXCEPTIONS] Where Field ='di'
+2024-08-23 08:50:45.958 [pool-403-thread-1] ERROR c.r.web.End2EndRestController$1:941 - SQLException:
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'dbo.S_5882_10_AGG_EXCEPTIONS'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:254)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1608)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:859)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:759)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7240)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:2869)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:243)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:218)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeQuery(SQLServerStatement.java:688)
+	at com.rightdata.common.BaseConnector.getResultsSet(BaseConnector.java:939)
+	at com.rightdata.web.End2EndRestController.execute(End2EndRestController.java:648)
+	at com.rightdata.web.End2EndRestController$2.run(End2EndRestController.java:104)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2024-08-23 08:50:45.958 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:657 - Error updating the FDR mapping error with mismatches:com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'dbo.S_5882_10_AGG_EXCEPTIONS'.
+2024-08-23 08:50:45.958 [pool-403-thread-1] INFO  c.r.web.End2EndRestController:774 - End of FDR!

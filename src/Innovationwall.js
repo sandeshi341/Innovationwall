@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useData } from "./DataContext";
 import "./Innovationwall.css";
@@ -11,7 +11,8 @@ const Innovationwall = () => {
   const [isSubmitting, setIsSubmitting] = useState(false); // Added to manage loader
   const [fileset, setFileset] = useState("");
   const [uploadstatusmsg, setUploadStatusMsg] = useState("");
-
+  const [selectedFile, setSelectedFile] = useState("");
+  const fileInputRef = useRef(null); // Reference to the file input
   const [newEntry, setNewEntry] = useState({
     Summary: "",
     description: "",
@@ -40,12 +41,13 @@ const Innovationwall = () => {
 
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
+    setSelectedFile(selectedFile);
     if (selectedFile) {
       const formData = new FormData();
       formData.append("file", selectedFile); // Add the file to the FormData
 
       // Send the file to the server using the /upload endpoint
-      fetch("http://localhost:3005/fileuploads", {
+      fetch("http://localhost:3005/fileuploads/", {
         method: "POST",
 
         body: formData,
@@ -60,10 +62,8 @@ const Innovationwall = () => {
         .then((data) => {
           console.log("File uploaded successfully:", data);
           setUploadStatusMsg(data.file);
-          //uploadstatusmsg = "http://";
-          // Get file name from response
+
           setFileset((prevFiles) => [...prevFiles, data.file]);
-          //console.log("upload", uploadstatusmsg);
         })
         .catch((error) => {
           console.error("Error uploading file:", error);
@@ -150,7 +150,10 @@ const Innovationwall = () => {
           description: "",
           category: "",
         });
-        debugger;
+        setSelectedFile("");
+        if (fileInputRef.current) {
+          fileInputRef.current.value = ""; // Clear the file input
+        }
       });
     }
   };
@@ -248,7 +251,11 @@ const Innovationwall = () => {
           </div>
 
           <div className="individual">
-            <input type="file" onChange={handleFileChange} />
+            <input
+              type="file"
+              ref={fileInputRef} // Attach the reference to the file input
+              onChange={handleFileChange}
+            />
           </div>
 
           <div className="btn">
